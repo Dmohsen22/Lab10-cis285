@@ -40,15 +40,15 @@ public void testNegative() {
     }
 
 public void testMixed() {
-    int[] arr = {2, -3, 0, 5, -9};
-    int[] sortedArr = {-9, -3, 0, 2, 5};
+    int[] arr = {3, -3, 0, 5, -9};
+    int[] sortedArr = {-9, -3, 0, 3, 5};
     SelectionSort.basicSelectionSort(arr);
     assertArrayEquals(sortedArr, arr);
     }
 
 public void testDuplicates() {
-    int[] arr = {-3, -3, 9, 5, 5};
-    int[] sortedArr = {-3, -3, 5, 5, 9};
+    int[] arr = {-4, -3, 9, 5, 5};
+    int[] sortedArr = {-4, -3, 5, 5, 9};
     SelectionSort.basicSelectionSort(arr);
     assertArrayEquals(sortedArr, arr);
     }
